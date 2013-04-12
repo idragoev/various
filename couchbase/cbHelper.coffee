@@ -69,7 +69,7 @@ switch command
       result = []
       for d in res.rows
         r = {
-          id: d.doc.meta.id.replace("/", "/dev_") 
+          id: d.doc.meta.id
           json: d.doc.json
           }
         result.push r
