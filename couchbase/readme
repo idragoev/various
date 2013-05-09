@@ -1,0 +1,5 @@
+To get all views:
+coffee cbHelper.coffee --ip="couchbase.server.ip.address" --port=8091 --cmd=getViews --bucket=default > views.json
+
+To create views:
+coffee cbHelper.coffee --ip="couchbase.server.ip.address" --port=8092 --cmd=addViews --bucket=default --file=./views.json --usr=user --pwd=password
